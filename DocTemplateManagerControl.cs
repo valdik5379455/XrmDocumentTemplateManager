@@ -585,7 +585,6 @@ namespace Futurez.Xrm.Tools
             
             // grab the list of files to be uploaded
             using (var openDlg = new OpenFileDialog() {
-                InitialDirectory = Path.GetPathRoot(Environment.SystemDirectory),
                 Filter = Constants.GetFileOpenFilter(),
                 FilterIndex = 1,
                 RestoreDirectory = true
@@ -631,7 +630,6 @@ namespace Futurez.Xrm.Tools
         {
             // allow user to select one or more files 
             using (var openDlg = new OpenFileDialog() {
-                InitialDirectory = Path.GetPathRoot(Environment.SystemDirectory),
                 Filter = Constants.GetFileOpenFilter(),
                 FilterIndex = 1,
                 RestoreDirectory = true,
